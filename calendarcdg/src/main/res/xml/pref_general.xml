@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+
+    <PreferenceCategory
+        android:title="@string/pref_titlegroup_halfteam">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_entries_user_halfteam"
+            android:entryValues="@array/pref_values_user_halfteam"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:key="preference_user_halfteam"
+            android:summary="La squadra di appartenenza"
+            android:title="@string/pref_title_user_halfteam"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_titlegroup_show"        >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:key="preference_show_stops"
+            android:summary="Scegli se mostrare o meno le fermate impianto"
+            android:title="@string/pref_title_show_stops"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:key="preference_show_calendars"
+            android:summary="Scegli se mostrare o meno gli eventi presi
+            dai calendari che puoi selezionare"
+            android:title="@string/pref_title_show_calendars"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="@string/str_scheme_doc"
+        android:title="@string/str_advanced">
+
+        <!-- Open the SchemeActivity -->
+        <Preference
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:key="preference_scheme_start_date"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_date_cheme" >
+            <intent
+                android:action="org.varonesoft.luke.calendarcdg.action.DATESCHEME"
+                android:targetPackage="@string/app_id">
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+
+</PreferenceScreen>

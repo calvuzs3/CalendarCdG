@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/image_button_left"
+        android:layout_width="@dimen/app_buttons_height"
+        android:layout_height="@dimen/app_buttons_height"
+        android:contentDescription="@string/button_left"
+        app:srcCompat="@drawable/ic_chevron_left"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textMese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="Large Text"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/image_button_right"
+        android:layout_width="@dimen/app_buttons_height"
+        android:layout_height="@dimen/app_buttons_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:contentDescription="@string/button_right"
+        android:fadingEdge="horizontal"
+        app:srcCompat="@drawable/ic_chevron_right" />
+
+</RelativeLayout>

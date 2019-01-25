@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.varonesoft.luke.calendarcdg"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/app_backup_rules"
+        android:icon="@mipmap/ic_launcher_badge"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_badge"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:versionCode="3"
+        android:versionName="1.2">
+        <activity
+            android:name=".CalendarCdgActivity"
+            android:label="@string/title_activity_calendar_cdg"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".preferences.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".CalendarCdgActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.varonesoft.luke.calendarcdg.CalendarCdgActivity" />
+        </activity>
+        <activity
+            android:name=".calendar.CalendarsActivity"
+            android:label="@string/title_activity_calendars"
+            android:parentActivityName=".CalendarCdgActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.varonesoft.luke.calendarcdg.CalendarCdgActivity" />
+        </activity>
+        <activity
+            android:name=".calendarcdg.SchemeActivity"
+            android:label="@string/title_activity_scheme"
+            android:parentActivityName=".CalendarCdgActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.varonesoft.luke.calendarcdg.CalendarCdgActivity" />
+            <intent-filter>
+                <action android:name="org.varonesoft.luke.calendarcdg.action.DATESCHEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

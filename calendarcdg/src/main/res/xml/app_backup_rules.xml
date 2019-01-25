@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include
+     Specifies a file or folder to backup. By default, Auto Backup includes almost all app files.
+     If you specify an <include> element, the system no longer includes any files by default and
+     backs up only the files specified. To include multiple files, use multiple <include> elements.
+
+     Note: Files in directories returned by getCacheDir(), getCodeCacheDir(),
+     or getNoBackupFilesDir() are always excluded even if you try to include them.-->
+    <!-- SharedPreferences are already included <include domain="sharedpref" /> -->
+
+    <!-- Exclude
+     Specifies a file or folder to exclude during backup. Here are some files that are typically
+     excluded from backup:
+     Files that have device specific identifiers, either issued by a server or generated on the
+     device. For example, Google Cloud Messaging (GCM) needs to generate a registration token every
+     time a user installs your app on a new device. If the old registration token is restored, the
+     app may behave unexpectedly.
+     Account credentials or other sensitive information. Consider asking the user to reauthenticate
+     the first time they launch a restored app rather than allowing for storage of such information
+     in the backup.
+     Files related to app debugging, such as instant run files. To exclude instant run files,
+     add the rule <exclude domain="file" path="instant-run"/>
+     Large files that cause the app to exceed the 25MB backup quota.
+
+     Note: If your configuration file specifies both elements, then the backup contains everything
+     captured by the <include> elements minus the resources named in the <exclude> elements.
+     In other words, <exclude> takes precedence.
+     -->
+    <exclude />
+</full-backup-content>
+

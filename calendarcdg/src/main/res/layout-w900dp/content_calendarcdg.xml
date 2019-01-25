@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/toolbar_height"
+    android:orientation="horizontal"
+    tools:context="org.varonesoft.luke.calendarcdg.CalendarCdgActivity">
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/fragment_calendarcdg_dayslist_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/frame_calendarcdglist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/fragment_calendarcdg_dayslist"
+                android:name="org.varonesoft.luke.calendarcdg.CalendarCdgDaysListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_calendarcdg_dayslist" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_events_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragment_calendarcdg_eventslist"
+            android:name="org.varonesoft.luke.calendarcdg.CalendarCdgDaysListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>

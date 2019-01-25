@@ -1,0 +1,85 @@
+<resources>
+    <!--<string name="app_id" translatable="false">org.varonesoft.luke.calendarcdg</string>-->
+    <string name="app_name" translatable="false">CalendarCdG</string>
+
+    <string name="app_version" translatable="false">1.2</string>
+    <string name="app_about">Calendarietto turni elettronico</string>
+    <string name="app_libraries">Librerie utilizzate:</string>
+    <string name="app_libraries_used" translatable="false">\n
+        - joda-time-2.9.3\n
+    </string>
+    <string name="app_author_str">Autore</string>
+    <string name="app_author_str_name" translatable="false">Calvuz</string>
+
+    <string name="navigation_drawer_open">Apri navigatore</string>
+    <string name="navigation_drawer_close">Chiudi navigatore</string>
+
+
+    <string name="title_menu_about">Info</string>
+    <string name="title_menu_settings">Impostazioni</string>
+    <string name="title_menu_scheme">Schema</string>
+
+    <string name="title_activity_calendar_cdg" translatable="false">CalendarCdG</string>
+    <string name="title_activity_calendars">Calendari</string>
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="title_activity_scheme">Schema</string>
+
+    <string name="title_day_list">Giorni</string>
+
+    <!-- Strings related to Settings -->
+    <string name="pref_title_show_calendars">Mostra calendari</string>
+    <bool name="pref_default_show_calendars">true</bool>
+
+    <string name="pref_title_show_stops">Mostra fermate</string>
+    <bool name="pref_default_show_stops">true</bool>
+
+    <string name="pref_title_user_halfteam">Squadra</string>
+    <string name="pref_default_user_halfteam" translatable="false">0</string>
+
+    <string name="button_right">destra</string>
+    <string name="button_left">sinistra</string>
+    <string name="nav_calendars">Calendari</string>
+    <string name="nav_header_other">Altro</string>
+    <string name="nav_settings">Impostazioni</string>
+    <string name="nav_about">Info</string>
+
+    <string-array name="pref_entries_user_halfteam">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+    </string-array>
+    <string-array name="pref_values_user_halfteam">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!-- Usate nel formattare numeri e stringhe nello schema -->
+    <string name="str_scheme" translatable="false">%1$s</string>
+    <string name="str_scheme_num" translatable="false">%1$2d</string>
+
+    <!-- Vario -->
+    <string name="str_scheme_doc">Imposta il primo giorno, della prima squadra, del primo trurno ( solitamente la mattina).
+        dello schema fisso</string>
+    <string name="str_permissions_denied">Permessi negati</string>
+    <string name="str_schema_fisso">Data schema fisso</string>
+    <string name="str_event">Evento</string>
+    <string name="str_separartor" translatable="false">separartor</string>
+    <string name="str_advanced">Avanzate</string>
+    <string name="pref_title_date_cheme">Data inizio schema</string>
+    <string name="pref_titlegroup_halfteam">Squadra</string>
+    <string name="pref_titlegroup_show">Mostra</string>
+
+</resources>

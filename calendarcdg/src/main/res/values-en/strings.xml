@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_about">E-Calendar</string>
+    <string name="app_libraries">Libraries</string>
+    <string name="app_author_str">Author</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="title_menu_about">About</string>
+    <string name="title_menu_settings">Settings</string>
+    <string name="title_menu_scheme">Scheme</string>
+    <string name="title_activity_calendars">Calendars</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_scheme">Scheme</string>
+    <string name="title_day_list">Days</string>
+    <string name="pref_title_show_calendars">Show Calendars</string>
+    <string name="pref_title_show_stops">Show Stops</string>
+    <string name="pref_title_user_halfteam">Team</string>
+    <string name="button_right">right</string>
+    <string name="button_left">left</string>
+    <string name="nav_calendars">Calendars</string>
+    <string name="nav_header_other">Other</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="str_scheme_doc">Sets the first day, of the first team, on its first workshift ( tipically morning).</string>
+    <string name="str_permissions_denied">Permissions denied</string>
+    <string name="str_schema_fisso">Fixed Scheme Date</string>
+    <string name="str_event">Event</string>
+    <string name="str_advanced">Advanced</string>
+    <string name="pref_title_date_cheme">Fixed scheme date</string>
+    <string name="pref_titlegroup_halfteam">Team</string>
+    <string name="pref_titlegroup_show">Show</string>
+</resources>

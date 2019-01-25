@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="6dip"
+              android:paddingStart="0px"
+              android:paddingEnd="6dip"
+              android:paddingTop="6dip">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0px"
+        android:layout_marginEnd="10dip"
+        android:paddingStart="0px"
+        tools:ignore="RtlSymmetry"
+        android:contentDescription="@string/str_event"/>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            />
+
+        <TextView
+            android:id="@+id/labelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:id="@+id/labelLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelDate"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+    </RelativeLayout>
+</LinearLayout>
